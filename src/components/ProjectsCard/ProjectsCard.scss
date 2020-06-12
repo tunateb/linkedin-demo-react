@@ -1,0 +1,28 @@
+@import "../../assets/variables.scss";
+
+.projects-card{
+    margin: 50px 20px;
+    padding: 10px;
+    background-color: $white;
+    .projectsCard-title{
+        display: flex;
+
+        h3{
+            margin: 0px 20px 10px 0px;
+        
+        }
+    }
+
+    .projectsCard-body{
+        display: flex;
+    .card-item{
+        margin-right: 10px;
+    }
+    }
+
+    .card-image{
+        width: 240px;
+        height: 190px;
+        overflow: hidden;
+    }
+}

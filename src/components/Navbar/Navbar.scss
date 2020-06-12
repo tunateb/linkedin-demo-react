@@ -1,0 +1,123 @@
+@import '../../assets/variables.scss';
+
+.navbar{
+    background-color:$white;
+    display: grid;
+    grid-auto-flow: column;
+
+    .brand-img{
+        max-width:46px;
+    }
+
+    .navbar-brand{
+        display: flex;
+        align-items: center;
+        padding: 0px 10px;
+    }
+
+
+
+// NAV-LİNKS CODES START ------
+    .nav-links{
+        padding:15px 50px;
+     .nav-link{
+         display:inline-grid;
+         text-decoration:none;
+         margin-left:20px;
+         text-align:center;
+         font-size:13px;
+         font-weight:bold;
+         color:$black;
+         text-transform:uppercase;
+
+         i{
+             font-size:24px;
+             color:$black;
+            
+         }
+
+         span{
+             margin-top:10px;
+         }
+     }  
+}
+
+// NAV-LİNKS CODES END ------
+
+
+// SEARCH CODES START ------
+
+    .search{
+        padding: 0px 50px;
+        display: flex;
+        align-items: center;
+        border-left: 1px solid $gray-border;
+        border-right: 1px solid $gray-border;
+
+        button{
+            border:none;
+            i{
+               color:$blue;
+               font-size:20px; 
+            }
+        }
+
+        input{
+            border:none;
+            margin-left:20px;
+            padding:15px 15px;
+
+           
+        }
+         input::placeholder{
+                color:$placeholder-color;
+                font-size:20px;
+            }
+
+    } 
+
+// SEARCH CODES END ------
+
+
+// NAVBAR-USERCARD CODES START ------
+.nav-userCard{
+    display:flex;
+    align-items:center;
+    padding: 0px 50px;
+    border-right: 1px solid $gray-border;
+
+    .card-title,.card-info{
+        display:flex;
+        margin-left:20px;
+    }
+
+    .card-title{
+        h4{
+            margin-right:15px;
+        }
+        p{
+            color:$mute-color;
+        }
+    }
+
+    .card-info{
+        h4{
+            margin-right:15px;
+            font-weight:100;
+            color:#747474;
+        }
+
+        p{
+            color:$green;
+        }
+    }
+}
+
+// NAVBAR-USERCARD CODES START ------
+
+
+
+
+
+
+}

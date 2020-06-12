@@ -1,0 +1,32 @@
+@import "../../../assets/variables.scss";
+
+.video-card{
+    background: $white;
+    padding: 20px 20px;
+    margin-top: 20px;
+
+    .video-title{
+        display: flex;
+        h5{
+            padding-right: 70px;
+        }
+        a{
+           
+            color: $blue;
+        }
+    }
+
+    .video-group{
+            
+
+        .video{
+            display: flex;
+            margin-top: 20px;
+
+            .video-info{
+                padding-left: 20px;
+            }
+        }
+    }
+
+    }

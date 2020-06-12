@@ -1,0 +1,32 @@
+@import "../../../assets/variables.scss";
+
+.visitors-card{
+    background: $white;
+    padding: 20px 20px;
+    margin-top: 20px;
+
+    .visitorsCard-title{
+        display: flex;
+        h5{
+            padding-right: 70px;
+        }
+        a{
+           
+            color: $blue;
+        }
+    }
+
+    .visitorsCard-peopleGroup{
+            
+
+        .visitorsCard-people{
+            display: flex;
+            margin-top: 20px;
+
+            .people-info{
+                padding-left: 20px;
+            }
+        }
+    }
+
+    }

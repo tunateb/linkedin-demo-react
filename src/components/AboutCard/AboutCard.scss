@@ -1,0 +1,19 @@
+@import "../../assets/variables.scss";
+
+.about-card{
+    margin: 50px 20px;
+    padding: 10px;
+    background-color: $white;
+
+    .about-title{
+        p{
+            padding: 10px 0px;
+        }
+        a{
+            text-decoration: none;
+            color: $blue;
+            font-size: 13px;
+            font-weight: 500;
+        }
+    }
+}

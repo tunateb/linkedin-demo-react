@@ -1,0 +1,30 @@
+@import '../../assets/variables.scss';
+
+.post-card{
+    margin: 50px;
+    background-color: $white;
+    padding: 40px;
+
+    .title{
+        padding: 20px 0px;
+    }
+
+    .post{
+        padding: 20px 0px;
+    }
+
+    .read-button{
+        text-decoration: none;
+        color: $blue;
+        font-weight: 500;
+    }
+
+    .user{
+        display: flex;
+
+        .card-image{
+            margin-right: 30px;
+        }
+    }
+
+}

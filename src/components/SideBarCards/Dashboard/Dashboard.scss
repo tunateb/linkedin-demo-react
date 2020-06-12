@@ -1,0 +1,31 @@
+@import "../../../assets/variables.scss";
+.dashboard-card{
+    background-color: $white;
+    padding: 20px 20px;
+    
+    .dashboard-title{
+        display: flex;
+        
+        h5{
+            padding-right: 25px;
+        }
+        a{
+           
+            color: $blue;
+        }
+    }
+
+    .dashboard-numbers{
+        padding: 10px 0px;
+        h1{
+            font-size: 50px;
+            font-weight: 500;
+            color: $blue;
+        }
+
+        h6{
+            font-weight: 500;
+            font-size: 12px;
+        }
+    }
+}

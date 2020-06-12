@@ -1,0 +1,52 @@
+@import '../../assets/variables.scss';
+
+.profile-card{
+    width: 800px;
+    background-color: $white;
+}
+
+
+.card-coverImg{
+    width: 800px;
+    height: 180px;
+    overflow: hidden;
+}
+
+.user-img{
+    transform: translateY(-40px);
+}
+
+.profileCard-body{
+    display: grid;
+    grid-template-columns: 1fr 11fr;
+
+    .profileCard-content{
+        padding: 10px 10px;
+
+        h5{
+            font-size: 17px;
+        }
+    
+        h6{
+            transform: translateY(-20px);
+            text-align: right;
+            font-weight: 400;
+            font-size: 14px;
+
+            i{
+                color: $blue;
+                padding: 0px 10px;
+                font-size: 13px;
+            }
+        }
+    }
+
+    .profileCard-buttons{
+        display: flex;
+    }
+
+    .btn-div{
+        padding: 15px 10px 0px 0px;
+    }
+}
+

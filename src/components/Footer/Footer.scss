@@ -1,0 +1,62 @@
+@import "../../assets/variables.scss";
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 0px;
+}
+
+.footer-grid{
+    display: grid;
+    grid-template-columns: 1fr 5fr 3fr 3fr;
+}
+
+.footer {
+  background-color: $white;
+  margin-top: 100px;
+
+  .logos{
+      display: grid;
+  }
+
+  .logo1,
+  .logo2 {
+    max-width: 46px;
+  }
+
+  
+
+// NAVİGATİON CODES START
+  .footer-nav {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+
+    ul {
+      display: grid;
+      padding: 0px 10px;
+      font-size: $font-size-default;
+    }
+    .nav-link {
+        text-decoration: none;
+        color: $black;
+      }
+  }
+
+
+  // ACCES CODES START
+  .fast-access {
+      padding: 0px 50px;
+    .btn-div {
+      padding: 10px 0px;
+    }
+  }
+
+
+
+  .language-form{
+      border: 1px solid #efefef;
+      border-radius: 4px;
+      padding: 10px 100px;
+      font-weight: 600;
+  }
+}

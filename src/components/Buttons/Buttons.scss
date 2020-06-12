@@ -1,0 +1,44 @@
+@import "../../assets/variables.scss";
+.btn {
+  width: 240px;
+  height: 40px;
+  font-size: 12px;
+  line-height: 11px;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: $text-shadow;
+  cursor: pointer;
+}
+
+.btn-footer {
+  text-align: left;
+  width: 180px;
+  height: 35px;
+  padding: 0px 10px;
+}
+
+.btn-dark-blue {
+  color: $white;
+  background-color: $dark-blue;
+  border: none;
+  border-radius: 4px;
+}
+
+.btn-blue {
+  color: $white;
+  background-color: $blue;
+  border: none;
+  border-radius: 4px;
+}
+
+.btn-transparent {
+  color: $blue;
+  background-color: transparent;
+  border: 1px solid $blue;
+  border-radius: 4px;
+}
+
+.btn-small {
+  width: 91px;
+  height: 32px;
+}

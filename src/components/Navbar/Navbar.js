@@ -17,19 +17,19 @@ class Navbar extends Component {
         <div className="nav-links">
           <Link className="nav-link" to="/">
             <i className="fas fa-home" />
-            <span>HomePage</span>
+            <p>HomePage</p>
           </Link>
           <Link className="nav-link" to="/user">
             <i className="far fa-user" />
-            <span>User list</span>
+            <p>User list</p>
           </Link>
           <Link style={{ display: _showLink ? "" : "none" }} className="nav-link" to="/post">
             <i className="far fa-edit"></i>
-            <span>POSTS</span>
+            <p>POSTS</p>
           </Link>
           <Link style={{ display: _showLink  ? "" : "none" }} className="nav-link" to="/user">
             <i className="far fa-clipboard"></i>
-            <span>TODOS</span>
+            <p>TODOS</p>
           </Link>
         </div>
 
@@ -57,7 +57,7 @@ class Navbar extends Component {
         <div className="nav-links">
           <Link className="nav-link" to="/">
             <i className="fas fa-ellipsis-h"></i>
-            <span>OTHER</span>
+            <p>OTHER</p>
           </Link>
         </div>
       </div>

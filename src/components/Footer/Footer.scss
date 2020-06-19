@@ -6,17 +6,20 @@
   padding: 40px 0px;
 }
 
-.footer-grid{
-    display: grid;
-    grid-template-columns: 1fr 5fr 3fr 3fr;
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 5fr 3fr 3fr;
 }
 
 .footer {
   background-color: $white;
   margin-top: 100px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 
-  .logos{
-      display: grid;
+  .logos {
+    display: grid;
   }
 
   .logo1,
@@ -24,9 +27,7 @@
     max-width: 46px;
   }
 
-  
-
-// NAVİGATİON CODES START
+  // NAVİGATİON CODES START
   .footer-nav {
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;
@@ -37,26 +38,23 @@
       font-size: $font-size-default;
     }
     .nav-link {
-        text-decoration: none;
-        color: $black;
-      }
+      text-decoration: none;
+      color: $black;
+    }
   }
-
 
   // ACCES CODES START
   .fast-access {
-      padding: 0px 50px;
+    padding: 0px 50px;
     .btn-div {
       padding: 10px 0px;
     }
   }
 
-
-
-  .language-form{
-      border: 1px solid #efefef;
-      border-radius: 4px;
-      padding: 10px 100px;
-      font-weight: 600;
+  .language-form {
+    border: 1px solid #efefef;
+    border-radius: 4px;
+    padding: 10px 100px;
+    font-weight: 600;
   }
 }

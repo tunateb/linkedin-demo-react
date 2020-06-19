@@ -1,18 +1,16 @@
-import React,{ Component, useState } from "react";
+import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import navLogo from "../../img/navLogo.png";
 import "./Navbar.scss";
 import Images from "../../components/Images/Images";
 
-
 class Navbar extends Component {
-
   render() {
-    let _showLink =  true;
+    let _showLink = true;
     return (
       <div className="navbar">
         <div className="navbar-brand">
-          <img className="brand-img" src={navLogo} />
+          <img className="brand-img" src={navLogo} alt = "brand-logo"/>
         </div>
         <div className="nav-links">
           <Link className="nav-link" to="/">
@@ -23,11 +21,19 @@ class Navbar extends Component {
             <i className="far fa-user" />
             <p>User list</p>
           </Link>
-          <Link style={{ display: _showLink ? "" : "none" }} className="nav-link" to="/post">
+          <Link
+            style={{ display: _showLink ? "" : "none" }}
+            className="nav-link"
+            to="/post"
+          >
             <i className="far fa-edit"></i>
             <p>POSTS</p>
           </Link>
-          <Link style={{ display: _showLink  ? "" : "none" }} className="nav-link" to="/user">
+          <Link
+            style={{ display: _showLink ? "" : "none" }}
+            className="nav-link"
+            to="/user"
+          >
             <i className="far fa-clipboard"></i>
             <p>TODOS</p>
           </Link>

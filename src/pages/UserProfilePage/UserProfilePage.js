@@ -42,7 +42,7 @@ class UserProfilePage extends Component {
             <UserProfileCard
               name={this.state.profiles.name}
               location={
-                this.state.profiles.address != undefined
+                this.state.profiles.address !== undefined
                   ? this.state.profiles.address.city
                   : ""
               }
@@ -52,7 +52,7 @@ class UserProfilePage extends Component {
             <AboutCard
               name={this.state.profiles.name}
               company={
-                this.state.profiles.company != undefined
+                this.state.profiles.company !== undefined
                   ? this.state.profiles.company.name
                   : ""
               }
@@ -61,7 +61,7 @@ class UserProfilePage extends Component {
             <ProjectsCard></ProjectsCard>
             <ExperienceCard
               companyList={
-                this.state.profiles.company != undefined
+                this.state.profiles.company !== undefined
                   ? this.state.profiles.company
                   : ""
               }

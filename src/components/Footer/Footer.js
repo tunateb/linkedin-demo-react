@@ -13,8 +13,8 @@ export default function Footer() {
             <div className='container'>
               <div className="footer-grid">
               <div className='logos'>
-                    <img className='logo1' src={navLogo}></img>
-                    <img className='logo2' src={textLogo}></img>
+                    <img className='logo1' src={navLogo} alt="linkedIn-logo-icon"></img>
+                    <img className='logo2' src={textLogo} alt="linkedIn-logo-text"></img>
                 </div>
                 <div className='footer-nav'>
                     <ul>

@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "../Images/Images";
-import BUttons from "../Buttons/Buttons";
 import "./UserProfilCard.scss";
 import Buttons from "../Buttons/Buttons";
 

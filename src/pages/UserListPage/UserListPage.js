@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { Component } from "react";
 import UserListCard from "../../components/UserListCard/UserListCard";
 import "./UserListPage.scss";
 import LeftSideBar from "../../components/LeftSideBar/LeftSideBar";
@@ -21,10 +21,9 @@ class UserListPage extends Component {
     this.setState({ userList: data });
   };
 
-  goDetails = (user) => {
-    // todo: this.state.setShowLink(true) 
-    const id = user;
-    this.props.history.push(`/user/${id}`);
+  goDetails = (id) => {
+    const pathname = this.props.history.location.pathname;
+    this.props.history.push(`${pathname}/${id}`);
   }
 
 

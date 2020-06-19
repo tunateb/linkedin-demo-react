@@ -12,8 +12,8 @@ function UserListCard({ title, company, src, onButtonClick }) {
         src={src}
       />
       <div className="user-list-content">
-        <h5>{title}</h5>
-        <p>Company : {company}</p>
+        <h3 className="user-name">{title}</h3>
+        <p className="user-company">Company : {company}</p>
         <Button
           onClick={onButtonClick}
           small

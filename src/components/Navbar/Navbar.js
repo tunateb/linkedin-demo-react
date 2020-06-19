@@ -19,7 +19,7 @@ class Navbar extends Component {
             <i className="fas fa-home" />
             <p>HomePage</p>
           </Link>
-          <Link className="nav-link" to="/user">
+          <Link className="nav-link" to="/users">
             <i className="far fa-user" />
             <p>User list</p>
           </Link>

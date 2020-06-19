@@ -1,12 +1,11 @@
 import React, { Component } from "react";
 import "./PostsPage.scss";
-import UserPostCard from "../../components/UserPostsCard/UserPostsCard"
+import UserPostCard from "../../components/UserPostsCard/UserPostsCard";
 import UserPostsCard from "../../components/UserPostsCard/UserPostsCard";
 
 class PostsPage extends Component {
-
   state = {
-    postList: []
+    postList: [],
   };
 
   componentDidMount() {
@@ -18,26 +17,24 @@ class PostsPage extends Component {
     const response = await fetch(`${baseUrl}`);
     const data = await response.json();
 
-    this.setState({ postList: data});
+    this.setState({ postList: data });
   };
-
-
 
   render() {
     return (
       <div className="container">
-          
-          <div className="user-posts">
-              <h1>USER POSTS</h1>
-            {this.state.postList.map((post) => (
-              <UserPostsCard
+        <div className="user-posts">
+          <h1>USER POSTS</h1>
+          {this.state.postList.map((post) => (
+            <UserPostsCard
               userid={post.userId}
               postid={post.id}
               title={post.title}
               post={post.body}
-              ></UserPostsCard>
-            ))}
-          </div>
+              key={post.id}
+            ></UserPostsCard>
+          ))}
+        </div>
       </div>
     );
   }

@@ -1,5 +1,6 @@
 import React from "react";
 import TodoCard from "../../components/TodoCard/TodoCard";
+import Seperator from "../../components/Seperator/Seperator";
 
 class TodosPage extends React.Component {
   state = {
@@ -23,6 +24,7 @@ class TodosPage extends React.Component {
     return (
       <div className="container">
         <div className="user-todos">
+          <Seperator seperatorText="TODOS" />
           {this.state.todos.map((todo) => (
             <TodoCard
               todoTitle={todo.title}

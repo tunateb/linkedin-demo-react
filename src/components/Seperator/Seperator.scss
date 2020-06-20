@@ -1,0 +1,27 @@
+@import "../../assets/variables.scss";
+
+.seperator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  max-width: 850px;
+  font-size: $font-size-default;
+  font-weight: 700;
+}
+.seperator::before,
+.seperator::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid rgba(58, 57, 57, 0.2);
+}
+.seperator::before {
+  margin-right: 1.5rem;
+}
+.seperator::after {
+  margin-left: 1.5rem;
+}
+
+.seperator-lg {
+  max-width: 1100px;
+}

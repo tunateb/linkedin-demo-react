@@ -11,7 +11,7 @@ function UserProfilCard({ name, location, onPostsBtnClick, onTodosBtnClick }) {
       </div>
       <div className="profileCard-body">
         <div className="user-img">
-          <Image circle profilePic src="https://source.unsplash.com/400/400" />
+          <Image circle border profilePic src="https://source.unsplash.com/400/400" />
         </div>
         <div className="profileCard-content">
           <h5>{name}</h5>

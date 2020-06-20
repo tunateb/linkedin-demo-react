@@ -1,13 +1,23 @@
+@import "../../assets/variables.scss";
+
 .user-list-card {
   display: grid;
   grid-template-columns: 3fr 9fr;
   max-width: 420px;
-  padding: 20px 0px;
+  padding: 10px;
   margin-top: 15px;
   background: #ffffff;
   border-radius: 4px;
 }
 
-.user-name, .user-company {
-  margin-bottom: 5px;
+.user-name,
+.user-company {
+  margin-bottom: 10px;
+  font-size: $font-size-default;
+}
+
+.user-list-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./PostsPage.scss";
 import UserPostsCard from "../../components/UserPostsCard/UserPostsCard";
+import Seperator from "../../components/Seperator/Seperator";
 
 class PostsPage extends Component {
   state = {
@@ -24,7 +25,8 @@ class PostsPage extends Component {
     return (
       <div className="container">
         <div className="user-posts">
-          {this.state.postList.map(post => (
+          <Seperator size="lg" seperatorText="POSTS" />
+          {this.state.postList.map((post) => (
             <UserPostsCard
               userid={post.userId}
               postid={post.id}

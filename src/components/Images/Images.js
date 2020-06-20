@@ -1,7 +1,7 @@
 import React from "react";
 import './Images.scss';
 
-function Image({ avatar = false,coverPhoto= false,projectPic=false, profilePic = false, circle = false,experiencePic=false, src, alt }) {
+function Image({ avatar = false,coverPhoto= false,projectPic=false, profilePic = false, circle = false,experiencePic=false, src, alt, border=false}) {
   const imageClasses = `
     img 
     ${avatar ? "img-avatar" : ""}  
@@ -10,6 +10,7 @@ function Image({ avatar = false,coverPhoto= false,projectPic=false, profilePic =
     ${projectPic ? "project-pic" : ""}  
     ${experiencePic ? "experience-pic" : ""}  
     ${circle ? "circle" : ""}  
+    ${border ? "border": ""}
     
     `;
   return (
